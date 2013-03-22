@@ -14,6 +14,8 @@ the source of your constant headaches.}
   gem.summary       = %q{Thank Obama whenever errors occur in your code}
   gem.homepage      = "https://github.com/mclosson/thanks_obama"
 
+  gem.add_development_dependency "rspec"
+
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
