@@ -30,6 +30,11 @@ $ gem install thanks_obama
     $ ruby -e "require 'thanks_obama'; {}.merge"
     -e:1:in `merge': wrong number of arguments(0 for 1) (Thanks Obama!) (ArgumentError)
 
+    # Real world example...
+    $ rspec
+    /Users/matt/.rvm/gems/ruby-1.9.3-p194/gems/rspec-core-2.13.1/lib/rspec/core/configuration.rb:343:in
+    `require': cannot load such file -- rspec/core/mocking/with_rspec (Thanks Obama!) (LoadError)
+
 ## Contributing
 
 1. Fork it
