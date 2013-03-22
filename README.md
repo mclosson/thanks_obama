@@ -1,6 +1,7 @@
 # ThanksObama
 
-TODO: Write a gem description
+Clearly it is Obama's fault whenever exceptions happen in your code or environment.  
+Be sure to pay proper attribution to the source of your constant headaches.
 
 ## Installation
 
@@ -18,7 +19,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+$ gem install thanks_obama
+
+$ ruby -e "require 'thanks_obama'; ''+nil"
+-e:1:in `+': can't convert nil into String (Thanks Obama!) (TypeError)
+
+$ ruby -e "require 'thanks_obama'; Object.new.asdf"
+-e:1:in `<main>': undefined method `asdf' for #<Object:0x007fb4f41945c8>
+ (Thanks Obama!) (NoMethodError)
+
+$ ruby -e "require 'thanks_obama'; {}.merge"
+-e:1:in `merge': wrong number of arguments(0 for 1) (Thanks Obama!)
+ (ArgumentError)
 
 ## Contributing
 

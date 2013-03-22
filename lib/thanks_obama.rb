@@ -1,5 +1,9 @@
 require "thanks_obama/version"
 
-module ThanksObama
-  # Your code goes here...
+class Exception
+  message = self.instance_method(:message)
+
+  define_method :message do
+    "#{message.bind(self).call} (Thanks Obama!)"
+  end
 end
